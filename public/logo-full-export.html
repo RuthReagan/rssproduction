@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;800&family=Playfair+Display:wght@700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 500px; height: 160px; overflow: hidden; background: transparent; }
+.logo-wrap { display: flex; align-items: center; gap: 16px; padding: 30px; width: 500px; height: 160px; }
+.logo-text { display: flex; flex-direction: column; }
+.logo-text .name { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: #1B2A4A; letter-spacing: -0.02em; line-height: 1; }
+.logo-text .sub { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: #B8860B; margin-top: 4px; line-height: 1; }
+</style>
+</head>
+<body>
+<div class="logo-wrap">
+  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Fills_and_strokes/svg_stroke_linejoin_example.png">
+    <defs>
+      <linearGradient id="rssGold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#F4D77E" />
+        <stop offset="0.5" stop-color="#D4AF37" />
+        <stop offset="1" stop-color="#A67C00" />
+      </linearGradient>
+    </defs>
+    <circle cx="50" cy="50" r="47" fill="#0a0f1a" stroke="url(#rssGold)" stroke-width="2.5" />
+    <circle cx="50" cy="50" r="41" fill="none" stroke="url(#rssGold)" stroke-width="2" />
+    <path d="M50 10 L56.9 46 L84.6 70 L50 58 L15.4 70 L43.1 46 Z" fill="url(#rssGold)" />
+    <g font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#E6C15A">
+      <text x="28" y="41" text-anchor="middle">R</text>
+      <text x="72" y="41" text-anchor="middle">S</text>
+      <text x="50" y="84" text-anchor="middle">S</text>
+    </g>
+  </svg>
+  <div class="logo-text">
+    <span class="name">REAGAN</span>
+    <span class="sub">STRATEGIC SOLUTIONS</span>
+  </div>
+</div>
+</body>
+</html>
