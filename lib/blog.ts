@@ -51,4 +51,46 @@ export function getAllCategories(): string[] {
 export function getRelatedArticles(slug: string, limit = 3): ArticleSummary[] {
   const current = getArticleBySlug(slug)
   if (!current) return []
-  return
+  return getAllArticleSummaries()
+    .filter((a) => a.slug !== slug && a.category === current.category)
+    .slice(0, limit)
+}
+
+/* ---------------------------------------------------------------------- */
+/* Minimal markdown -> content-block parser.                              */
+/* The article corpus only uses #, ##, ### headings, italic-wrapped       */
+/* lede lines, and plain paragraphs, so a small line-based parser is all  */
+/* that's needed (no external markdown renderer dependency required).    */
+/* ---------------------------------------------------------------------- */
+
+export type ContentBlock =
+  | { type: 'h2'; text: string }
+  | { type: 'h3'; text: string }
+  | { type: 'p'; text: string }
+
+export function parseArticleBody(body: string): ContentBlock[] {
+  const blocks: ContentBlock[] = []
+  const paragraphs = body.split(/\n\s*\n/)
+
+  for (const raw of paragraphs) {
+    const line = raw.trim()
+    if (!line) continue
+
+    if (line.startsWith('### ')) {
+      blocks.push({ type: 'h3', text: line.replace(/^###\s+/, '') })
+    } else if (line.startsWith('## ')) {
+      blocks.push({ type: 'h2', text: line.replace(/^##\s+/, '') })
+    } else if (line.startsWith('# ')) {
+      // Skip stray top-level headings inside the body (title is rendered separately)
+      continue
+    } else {
+      blocks.push({ type: 'p', text: line.replace(/\n/g, ' ') })
+    }
+  }
+
+  return blocks
+}
+
+export function estimateReadTimeLabel(minutes: number): string {
+  return `${minutes} min read`
+}
