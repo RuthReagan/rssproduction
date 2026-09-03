@@ -47,10 +47,10 @@ export function ContactContent() {
                 <div>
                   <h3 className="font-semibold text-[#0F1B2D] mb-1">Phone</h3>
                   <a
-                    href="tel:+19189551%20" 
+                    href="tel:+15398950065"
                     className="text-[#B8860B] hover:underline"
                   >
-                    <span suppressHydrationWarning>(918) 955-1010</span>
+                    <span suppressHydrationWarning>(539) 895-0065</span>
                   </a>
                 </div>
               </div>
