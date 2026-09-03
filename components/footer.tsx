@@ -28,6 +28,7 @@ export function Footer() {
               <Link href="/" className="text-sm text-gray-400 hover:text-white transition-colors">Home</Link>
               <Link href="/about" className="text-sm text-gray-400 hover:text-white transition-colors">About</Link>
               <Link href="/services" className="text-sm text-gray-400 hover:text-white transition-colors">Services</Link>
+              <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors">Insights</Link>
               <Link href="/testimonials" className="text-sm text-gray-400 hover:text-white transition-colors">Testimonials</Link>
               <Link href="/contact" className="text-sm text-gray-400 hover:text-white transition-colors">Contact</Link>
               <Link href="/sitemap-page" className="text-sm text-gray-400 hover:text-white transition-colors">Site Map</Link>
