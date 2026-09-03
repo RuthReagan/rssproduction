@@ -26,13 +26,16 @@ const pages = [
     href: '/services',
     title: 'Services',
     description: 'The 5 Pillars: Executive HR Strategy, Culture & Leadership, Compliance & Risk, Growth & Change, and Training & Speaking.',
-    icon: Briefcase,
+ icon: Briefcase,
   },
-
+  {
+    href: '/blog',
+    title: 'HR Insights',
+    description: 'Articles on compliance, culture, tribal gaming HR, and executive leadership strategy.',
+    icon: Newspaper,
+  },
   {
     href: '/testimonials',
-    title: 'Testimonials',
-    description: 'Building new partnerships and earning lasting trust, backed by 30+ years of executive HR leadership.',
     icon: MessageSquareQuote,
   },
   {
