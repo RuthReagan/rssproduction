@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { Home, User, Briefcase, Mail, MessageSquareQuote, ArrowUpRight } from 'lucide-react'
+import { Home, User, Briefcase, Mail, MessageSquareQuote, ArrowUpRight, Newspaper } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Site Map',
