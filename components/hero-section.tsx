@@ -78,7 +78,7 @@ export function HeroSection() {
               href="/contact"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#B8860B] text-white rounded font-semibold text-base hover:bg-[#9A7209] transition-all duration-300 shadow-lg shadow-[#B8860B]/20 hover:shadow-xl hover:shadow-[#B8860B]/30">
               
-              Book Your Free 30-Minute Strategy Call
+              Let&apos;s Connect!
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
