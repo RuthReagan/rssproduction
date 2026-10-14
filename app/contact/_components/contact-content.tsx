@@ -32,7 +32,7 @@ export function ContactContent() {
                 <div>
                   <h3 className="font-semibold text-[#0F1B2D] mb-1">Email</h3>
                   <a
-                    href="mailto:ruth@reaganstrategicsolutions.com"
+                    href="mailto:ruth@reaganstrategicsolutions.com?cc=hello@reaganstrategicsolutions.com"
                     className="text-[#B8860B] hover:underline"
                   >
                     <span suppressHydrationWarning>ruth@reaganstrategicsolutions.com</span>
